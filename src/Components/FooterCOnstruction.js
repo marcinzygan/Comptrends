@@ -4,8 +4,10 @@ const FooterCOnstruction = () => {
   return (
     <div className="construction__footer">
       <div>
-        Designed and developed by :{" "}
-        <a href="https://marcin-zygan.com">Marcin Zygan</a>
+        Created by : {""}
+        <a className="footer__link" href="https://marcin-zygan.com">
+          ZyganDesign
+        </a>
       </div>
     </div>
   );

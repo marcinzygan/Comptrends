@@ -18,6 +18,15 @@
 .construction__footer {
   height: 10vh;
   background-color: #202020;
+  padding-top: 3rem;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
 }
 @media (min-width: 800px) {
   .construction {
