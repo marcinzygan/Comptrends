@@ -27,7 +27,7 @@
   font-weight: 700;
 }
 .footer__link {
-  /* text-decoration: none; */
+  text-decoration: none;
   color: white;
   font-size: 0.7rem;
   cursor: pointer;
