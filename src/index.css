@@ -21,12 +21,13 @@
   padding-top: 3rem;
   color: white;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 .footer__link {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
+  cursor: pointer;
 }
 @media (min-width: 800px) {
   .construction {
