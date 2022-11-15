@@ -1,13 +1,26 @@
-body {
+*,
+::before,
+::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.construction {
+  height: 90vh;
+  width: 100%;
+  background-image: url(./Images/soonmobile.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #202020;
+}
+.construction__footer {
+  height: 10vh;
+  background-color: #202020;
+}
+@media (min-width: 800px) {
+  .construction {
+    background-image: url(./Images/soondesktop.jpg);
+  }
 }
