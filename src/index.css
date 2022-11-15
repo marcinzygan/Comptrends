@@ -23,11 +23,15 @@
   text-align: center;
   font-size: 0.6rem;
 }
+.footer__text {
+  font-weight: 700;
+}
 .footer__link {
   /* text-decoration: none; */
   color: white;
   font-size: 0.7rem;
   cursor: pointer;
+  font-weight: 300;
 }
 @media (min-width: 800px) {
   .construction {
