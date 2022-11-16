@@ -5,7 +5,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* CUSTOM PROPERTIES */
+:root {
+  --fw-thin: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --ff-text: "Roboto Serif", serif;
+  --fw-headings: "Raleway", sans-serif;
+  --clr-white: #ffffff;
+  --clr-dark: #1d1d1b;
+  --clr-accentFirst: #ff11c7;
+  --clr-accentSeconf: #58effb;
+}
 .construction {
   min-height: 90vh;
   width: 100%;
