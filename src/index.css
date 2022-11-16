@@ -11,7 +11,7 @@
   --fw-regular: 400;
   --fw-bold: 700;
   --ff-text: "Roboto Serif", serif;
-  --fw-headings: "Raleway", sans-serif;
+  --ff-headings: "Raleway", sans-serif;
   --clr-white: #ffffff;
   --clr-dark: #1d1d1b;
   --clr-accentFirst: #ff11c7;
@@ -43,6 +43,7 @@
   font-size: 0.7rem;
   cursor: pointer;
   font-weight: 300;
+  font-family: var(--ff-text);
 }
 @media (min-width: 800px) {
   .construction {
