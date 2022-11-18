@@ -4,13 +4,15 @@ const Header = () => {
   return (
     <header>
       <div className="header__container">
-        <div className="header__logo"></div>
+        <div className="header__logo">
+          <p>LOGO</p>
+        </div>
         <nav className="nav">
           <ul>
-            <li>home</li>
-            <li>who we are</li>
-            <li>our offer</li>
-            <li>contact</li>
+            <li className="nav__link">home</li>
+            <li className="nav__link">who we are</li>
+            <li className="nav__link">our offer</li>
+            <li className="nav__link">contact</li>
           </ul>
         </nav>
       </div>

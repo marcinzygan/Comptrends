@@ -17,6 +17,24 @@
   --clr-accentFirst: #ff11c7;
   --clr-accentSeconf: #58effb;
 }
+/* HEDER */
+.header__container {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+.nav {
+  margin-left: auto;
+}
+.nav > ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  list-style: none;
+}
 .construction {
   min-height: 90vh;
   width: 100%;
