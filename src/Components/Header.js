@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
     <header>
-      <div className="header__container">
+      {/* <div className="header__container">
         <div className="header__logo">
           <p>LOGO</p>
         </div>
@@ -15,7 +16,8 @@ const Header = () => {
             <li className="nav__link">contact</li>
           </ul>
         </nav>
-      </div>
+      </div> */}
+      <Navbar />
     </header>
   );
 };
