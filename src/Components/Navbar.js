@@ -1,16 +1,15 @@
-// import logo from "../Images/logo.svg";
 import React from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleNavigation } from "../Features/navSlice";
 
 export default function Navbar() {
-  //Set state for opening the navigation
-  const [navOpen, setNavOpen] = React.useState(false);
-  //Function to toggle state
-  function toggleNavigation() {
-    setNavOpen((prevState) => !prevState);
-  }
+  const dispatch = useDispatch();
+  // GET STATE
+  const isNavOpen = useSelector((state) => state.nav.isNavOpen);
+
   return (
     <nav className="nav">
       <Link to="home" spy={true} smooth={true} offset={-100} className="logo">
@@ -18,7 +17,7 @@ export default function Navbar() {
       </Link>
 
       <motion.button
-        onClick={toggleNavigation}
+        onClick={() => dispatch(toggleNavigation(isNavOpen))}
         className="nav__button"
         aria-label="toggle navigation"
         // initial={{ x: 400, opacity: 0 }}
@@ -28,10 +27,10 @@ export default function Navbar() {
         <Icon icon="ri:menu-4-line" />
       </motion.button>
 
-      <ul className={!navOpen ? "nav__list" : "nav__open nav__list"}>
+      <ul className={!isNavOpen ? "nav__list" : "nav__open nav__list"}>
         <li className="nav__li">
           <Link
-            onClick={toggleNavigation}
+            onClick={() => dispatch(toggleNavigation(isNavOpen))}
             to="home"
             className="nav__link"
             spy={true}
@@ -43,7 +42,7 @@ export default function Navbar() {
         </li>
         <li className="nav__li">
           <Link
-            onClick={toggleNavigation}
+            onClick={() => dispatch(toggleNavigation(isNavOpen))}
             to="work"
             className="nav__link"
             spy={true}
@@ -55,7 +54,7 @@ export default function Navbar() {
         </li>
         <li className="nav__li">
           <Link
-            onClick={toggleNavigation}
+            onClick={() => toggleNavigation(isNavOpen)}
             to="about"
             className="nav__link"
             spy={true}
@@ -67,7 +66,7 @@ export default function Navbar() {
         </li>
         <li className="nav__li">
           <Link
-            onClick={toggleNavigation}
+            onClick={() => dispatch(toggleNavigation(isNavOpen))}
             to="contact"
             className="nav__link"
             spy={true}
