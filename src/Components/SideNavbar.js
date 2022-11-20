@@ -3,33 +3,17 @@ import { Link } from "react-scroll";
 
 export default function SideNavbar() {
   return (
-    <nav className="dot__nav">
+    <nav className="side__nav">
       <div className="dot__item">
         <Link
           to="home"
           activeClass="dot__link-selected"
           spy={true}
           smooth={true}
-          offset={-130}
+          offset={-70}
           className="dot__link"
-        >
-          {" "}
-        </Link>
+        ></Link>
         <span className="dot__label">Home</span>
-      </div>
-
-      <div className="dot__item">
-        <Link
-          to="work"
-          activeClass="dot__link-selected"
-          spy={true}
-          smooth={true}
-          offset={-30}
-          className="dot__link"
-        >
-          {" "}
-        </Link>
-        <span className="dot__label">My Work</span>
       </div>
 
       <div className="dot__item">
@@ -40,9 +24,19 @@ export default function SideNavbar() {
           smooth={true}
           offset={-30}
           className="dot__link"
-        >
-          {" "}
-        </Link>
+        ></Link>
+        <span className="dot__label">My Work</span>
+      </div>
+
+      <div className="dot__item">
+        <Link
+          to="offer"
+          activeClass="dot__link-selected"
+          spy={true}
+          smooth={true}
+          offset={-30}
+          className="dot__link"
+        ></Link>
         <span className="dot__label">About Me</span>
       </div>
 
@@ -54,9 +48,7 @@ export default function SideNavbar() {
           smooth={true}
           offset={-30}
           className="dot__link"
-        >
-          {" "}
-        </Link>
+        ></Link>
         <span className="dot__label">Contact</span>
       </div>
     </nav>
