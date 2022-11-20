@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import Construction from "./Components/Construction";
 import FooterCOnstruction from "./Components/FooterCOnstruction";
 import Header from "./Components/Header";
+import SideNavbar from "./Components/SideNavbar";
 
 const MainPage = () => {
   const displayConstruction = useSelector(
@@ -13,6 +14,7 @@ const MainPage = () => {
   return (
     <>
       {!displayConstruction && <Header />}
+      {!displayConstruction && <SideNavbar />}
       {displayConstruction && <Construction />}
       {displayConstruction && <FooterCOnstruction />}
     </>

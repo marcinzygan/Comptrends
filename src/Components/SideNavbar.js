@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-export default function DotMenu() {
+export default function SideNavbar() {
   return (
     <nav className="dot__nav">
       <div className="dot__item">
