@@ -4,52 +4,52 @@ import { Link } from "react-scroll";
 export default function SideNavbar() {
   return (
     <nav className="side__nav">
-      <div className="dot__item">
+      <div className="side__item">
         <Link
           to="home"
-          activeClass="dot__link-selected"
+          activeClass="side__link-selected"
           spy={true}
           smooth={true}
-          offset={-70}
-          className="dot__link"
+          offset={-100}
+          className="side__link"
         ></Link>
-        <span className="dot__label">Home</span>
+        <span className="side__label">Home</span>
       </div>
 
-      <div className="dot__item">
+      <div className="side__item">
         <Link
           to="about"
-          activeClass="dot__link-selected"
+          activeClass="side__link-selected"
           spy={true}
           smooth={true}
           offset={-30}
-          className="dot__link"
+          className="side__link"
         ></Link>
-        <span className="dot__label">My Work</span>
+        <span className="side__label">About us</span>
       </div>
 
-      <div className="dot__item">
+      <div className="side__item">
         <Link
           to="offer"
-          activeClass="dot__link-selected"
+          activeClass="side__link-selected"
           spy={true}
           smooth={true}
           offset={-30}
-          className="dot__link"
+          className="side__link"
         ></Link>
-        <span className="dot__label">About Me</span>
+        <span className="side__label">Our offer</span>
       </div>
 
-      <div className="dot__item">
+      <div className="side__item">
         <Link
           to="contact"
-          activeClass="dot__link-selected"
+          activeClass="side__link-selected"
           spy={true}
           smooth={true}
           offset={-30}
-          className="dot__link"
+          className="side__link"
         ></Link>
-        <span className="dot__label">Contact</span>
+        <span className="side__label">Contact</span>
       </div>
     </nav>
   );
