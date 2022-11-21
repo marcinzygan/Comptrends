@@ -8,14 +8,13 @@ const Home = () => {
     <section id="home" className="hero__section">
       <div className="hero__container">
         <div className="hero__txt-container">
-          <motion.h1
+          <motion.div
             initial={{ x: -500 }}
             animate={{ x: 0 }}
             transition={{ duration: 2 }}
-            className="hero__txt"
           >
-            Data solution for your business
-          </motion.h1>
+            <h1 className="hero__txt"> Data solution for your business</h1>
+          </motion.div>
         </div>
         <motion.div
           className="hero__animation-container"
@@ -30,7 +29,7 @@ const Home = () => {
                 duration: 2,
                 delay: 1,
                 repeat: Infinity,
-                repeatDelay: 6,
+                repeatDelay: 3,
               }}
               className="hero__dot"
             ></motion.div>
@@ -40,7 +39,7 @@ const Home = () => {
                 duration: 2,
                 delay: 2,
                 repeat: Infinity,
-                repeatDelay: 6,
+                repeatDelay: 3,
               }}
               className="hero__dot"
             ></motion.div>
@@ -50,7 +49,7 @@ const Home = () => {
                 duration: 2,
                 delay: 3,
                 repeat: Infinity,
-                repeatDelay: 6,
+                repeatDelay: 3,
               }}
               className="hero__dot"
             ></motion.div>
@@ -60,7 +59,7 @@ const Home = () => {
                 duration: 2,
                 delay: 4,
                 repeat: Infinity,
-                repeatDelay: 6,
+                repeatDelay: 3,
               }}
               className="hero__line"
             ></motion.div>
@@ -68,11 +67,12 @@ const Home = () => {
           <div className="hero__background"></div>
         </motion.div>
         <motion.div
+          className="hero__btn"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 3 }}
+          transition={{ duration: 1, delay: 3 }}
         >
-          <Link to="about" className="hero__btn" spy={true} smooth={true}>
+          <Link to="about" spy={true} smooth={true}>
             Learn more
           </Link>
         </motion.div>
@@ -80,21 +80,21 @@ const Home = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 4 }}
+            transition={{ duration: 1, delay: 4.5 }}
           >
             <Icon icon="entypo-social:facebook-with-circle" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 4.5 }}
+            transition={{ duration: 1, delay: 5 }}
           >
             <Icon icon="entypo-social:linkedin-with-circle" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 5 }}
+            transition={{ duration: 1, delay: 5.5 }}
           >
             <Icon icon="entypo-social:twitter-with-circle" />
           </motion.div>
