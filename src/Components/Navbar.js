@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleNavigation } from "../Features/navSlice";
-import logo from "../Images/logo.png";
+import logo from "../Images/logo.svg";
 export default function Navbar() {
   const dispatch = useDispatch();
   // GET STATE

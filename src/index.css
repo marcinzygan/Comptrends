@@ -20,7 +20,11 @@
   --fs-txt: 0.8rem;
 }
 /* FONT SIZES FOR DIFFERENT SCREENS */
-
+@media (min-width: 400px) {
+  :root {
+    --fs-h1: 2.5rem;
+  }
+}
 /* GENERAL STYLES */
 img {
   width: 100%;
@@ -43,14 +47,14 @@ body {
 /* NAV BAR  */
 
 .logo {
-  width: 75px;
-  height: 30px;
+  width: 80px;
+  /* height: 30px; */
   z-index: 100;
   /* padding-left: 3rem; */
   color: var(--clr-white);
 }
 .nav {
-  padding-top: 1rem;
+  margin-top: 1rem;
   padding-left: 2rem;
   /* padding: 0 2.5rem 0 2.5rem; */
   width: 100%;
@@ -258,14 +262,14 @@ body {
   gap: 1rem;
 }
 .hero__dot {
-  height: 6px;
-  width: 6px;
+  height: 8px;
+  width: 8px;
   border-radius: 50%;
   background-color: var(--clr-white);
 }
 .hero__line {
-  height: 100px;
-  width: 2px;
+  height: 135px;
+  width: 1px;
   background-color: var(--clr-white);
 }
 .social__icons {
@@ -336,6 +340,35 @@ body {
 }
 
 /* MEDIA QUERIES */
+
+/* 300px */
+@media (min-width: 300px) {
+  .nav {
+    margin-top: 2rem;
+  }
+  .logo {
+    width: 120px;
+  }
+  .hero__background {
+    width: 200px;
+    height: 270px;
+    transform: translateY(11px);
+  }
+}
+/* 400px */
+@media (min-width: 400px) {
+  .hero__txt-container {
+    margin-top: 3rem;
+  }
+  .hero__txt {
+    padding-right: 2rem;
+  }
+  .hero__background {
+    width: 240px;
+    height: 320px;
+    transform: translateY(12px);
+  }
+}
 @media (min-width: 800px) {
   .construction {
     background-image: url(./Images/soondesktop.jpg);
