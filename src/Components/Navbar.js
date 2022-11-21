@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="home" spy={true} smooth={true} offset={-100} className="logo">
-        <Icon icon="ph:magnifying-glass-bold" />
+        Comptrends logo
       </Link>
 
       <motion.button
