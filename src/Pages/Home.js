@@ -8,16 +8,22 @@ const Home = () => {
     <section id="home" className="hero__section">
       <div className="hero__container">
         <div className="hero__txt-container">
-          <h1 className="hero__txt">Data solution for your business</h1>
-        </div>
-        <div className="hero__animation-container">
-          <motion.div
-            // transition={{
-            //   staggerChildren: 0.5,
-            //   delayChildren: 0.3,
-            // }}
-            className="hero__animation"
+          <motion.h1
+            initial={{ y: -500 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 2 }}
+            className="hero__txt"
           >
+            Data solution for your business
+          </motion.h1>
+        </div>
+        <motion.div
+          className="hero__animation-container"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 4, delay: 2 }}
+        >
+          <div className="hero__animation">
             <motion.div
               animate={{ backgroundColor: ["#ffff", "#58effb", "#ffff"] }}
               transition={{
@@ -58,9 +64,9 @@ const Home = () => {
               }}
               className="hero__line"
             ></motion.div>
-          </motion.div>
+          </div>
           <div className="hero__background"></div>
-        </div>
+        </motion.div>
         <Link to="about" className="hero__btn" spy={true} smooth={true}>
           Learn more
         </Link>

@@ -34,8 +34,8 @@ body {
   background-color: var(--clr-dark);
 }
 .iconify {
-  height: 26px;
-  width: 26px;
+  height: 25px;
+  width: 25px;
   color: var(--clr-white);
 }
 /* NAV BAR  */
