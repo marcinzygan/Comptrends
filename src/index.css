@@ -22,7 +22,9 @@
 /* FONT SIZES FOR DIFFERENT SCREENS */
 
 /* GENERAL STYLES */
-
+img {
+  width: 100%;
+}
 section {
   min-height: 100vh;
   color: var(--clr-white);

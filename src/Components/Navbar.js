@@ -4,46 +4,22 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleNavigation } from "../Features/navSlice";
-
+import logo from "../Images/logo.png";
 export default function Navbar() {
   const dispatch = useDispatch();
   // GET STATE
   const isNavOpen = useSelector((state) => state.nav.isNavOpen);
-  // FRAMER MOTION NAV ANIMATIONS
-  // const rectangleMotion = {
-  //   rest: {
-  //     color: "grey",
-  //     x: 0,
-  //     transition: {
-  //       duration: 2,
-  //       type: "tween",
-  //       ease: "easeIn",
-  //     },
-  //   },
-  //   hover: {
-  //     color: "blue",
-  //     x: 30,
-  //     transition: {
-  //       duration: 0.4,
-  //       type: "tween",
-  //       ease: "easeOut",
-  //     },
-  //   },
-  // };
 
   return (
     <nav className="nav">
       <Link to="home" spy={true} smooth={true} offset={-100} className="logo">
-        Comptrends logo
+        <img src={logo} alt="comptrends logo"></img>
       </Link>
 
       <motion.button
         onClick={() => dispatch(toggleNavigation(isNavOpen))}
         className="nav__button"
         aria-label="toggle navigation"
-        // initial={{ x: 400, opacity: 0 }}
-        // animate={{ x: 0, opacity: 1 }}
-        // transition={{ duration: 2, delay: 3 }}
       >
         <div className="nav__button-circle">
           {isNavOpen ? (
