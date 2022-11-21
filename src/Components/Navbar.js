@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="home" spy={true} smooth={true} offset={-100} className="logo">
-        <img alt="marcin zygan logo"></img>
+        <Icon icon="ph:magnifying-glass-bold" />
       </Link>
 
       <motion.button
@@ -47,9 +47,9 @@ export default function Navbar() {
       >
         <div className="nav__button-circle">
           {isNavOpen ? (
-            <Icon icon="ooui:close" />
+            <Icon icon="ooui:close" color="#ff11c7" />
           ) : (
-            <Icon icon="ci:menu-alt-01" />
+            <Icon icon="ci:menu-alt-01" color="#ff11c7" />
           )}
         </div>
       </motion.button>
@@ -70,8 +70,7 @@ export default function Navbar() {
               onClick={() => dispatch(toggleNavigation(isNavOpen))}
               to="home"
               className="nav__link"
-              activeClass="
-              nav__link-selected"
+              activeClass="nav__link-selected"
               spy={true}
               smooth={true}
               offset={-130}
