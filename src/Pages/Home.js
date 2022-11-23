@@ -13,7 +13,17 @@ const Home = () => {
             animate={{ x: 0 }}
             transition={{ duration: 2 }}
           >
-            <h1 className="hero__txt"> Data solution for your business</h1>
+            <h1 className="hero__txt"> Data solution for your business .</h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 3, delay: 2 }}
+              className="hero__subtxt"
+            >
+              Lorem ipsum dolor sit amet consectetur. Bibendum et mauris porta
+              id sapien varius risus. Condimentum posuere habitant netus
+              pellentesque leo arcu.
+            </motion.p>
           </motion.div>
         </div>
         <motion.div

@@ -11,7 +11,12 @@ export default function Navbar() {
   const isNavOpen = useSelector((state) => state.nav.isNavOpen);
 
   return (
-    <nav className="nav">
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3, delay: 2 }}
+      className="nav"
+    >
       <Link to="home" spy={true} smooth={true} offset={-100} className="logo">
         <img src={logo} alt="comptrends logo"></img>
       </Link>
@@ -162,6 +167,6 @@ export default function Navbar() {
           </motion.li>
         </div>
       </ul>
-    </nav>
+    </motion.nav>
   );
 }
