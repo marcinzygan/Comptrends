@@ -91,7 +91,7 @@ body {
 
 .nav__button {
   /* margin-top: 0.5rem; */
-  margin-right: 1rem;
+  padding: 1rem;
   /* margin-bottom: 0.5rem; */
   background: transparent;
   border: 0;
@@ -149,7 +149,7 @@ body {
   font-family: var(--ff-headings);
   font-weight: var(--fw-regular);
   font-size: var(--fs-nav);
-  color: var(--clr-white);
+  color: var(--clr-dark);
 
   z-index: 5;
 }
@@ -214,12 +214,13 @@ body {
     width: 100%;
     /* Hide nav links */
     /* transform: translateX(-150%); */
-    transition: all 1s ease-in-out;
-    background-color: var(--clr-dark);
+    transition: all 1.2s ease-in-out;
+    background-color: var(--clr-white);
     opacity: 0.999;
     z-index: 100;
     clip-path: circle(0% at 50% 50%);
   }
+
   .nav__open {
     /* show links */
     /* transform: translateX(0); */
@@ -242,6 +243,9 @@ body {
   }
   .nav__circle {
     display: block;
+  }
+  .nav__link {
+    color: var(--clr-white);
   }
 }
 /* HERO SECTION */
