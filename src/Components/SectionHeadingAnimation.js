@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 const SectionHeadingAnimation = (props) => {
-  const randomWidth = Math.ceil(Math.random(85) * 100);
-  console.log(randomWidth);
   return (
     <div className="section__heading-container">
       <div className="section__animation">
@@ -67,7 +65,7 @@ const SectionHeadingAnimation = (props) => {
           }}
         ></motion.div>
       </div>
-      <h2>{props.heading}</h2>
+      <h2 className="section__heading-txt">{props.heading}</h2>
     </div>
   );
 };

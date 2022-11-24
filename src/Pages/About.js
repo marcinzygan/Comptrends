@@ -4,7 +4,7 @@ import SectionHeadingAnimation from "../Components/SectionHeadingAnimation";
 const About = () => {
   return (
     <section id="about">
-      <SectionHeadingAnimation heading={"About"} />
+      <SectionHeadingAnimation heading={"About us"} />
     </section>
   );
 };

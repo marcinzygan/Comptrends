@@ -425,6 +425,10 @@ body {
 .section__line-5 {
   background-color: var(--clr-white);
 }
+.section__heading-txt {
+  padding-left: 1rem;
+  font-family: var(--ff-headings);
+}
 /* CONSTRUCTION*/
 .construction {
   min-height: 90vh;
