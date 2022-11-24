@@ -8,8 +8,8 @@ const animationSlice = createSlice({
   name: "animation",
   initialState,
   reducers: {
-    checkScreenSize: (state, data) => {
-      if (data.payload > 800) {
+    checkScreenSize: (state) => {
+      if (window.innerWidth > 1300) {
         state.displayAnimation = false;
       } else {
         return;

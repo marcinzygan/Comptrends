@@ -1,14 +1,17 @@
-import React from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleNavigation } from "../Features/navSlice";
 import logo from "../Images/logo.svg";
+
 export default function Navbar() {
   const dispatch = useDispatch();
-  // GET STATE
+  // STATE imports
   const isNavOpen = useSelector((state) => state.nav.isNavOpen);
+  const displayAnimation = useSelector(
+    (state) => state.animation.displayAnimation
+  );
 
   return (
     <motion.nav
@@ -27,6 +30,7 @@ export default function Navbar() {
         aria-label="toggle navigation"
       >
         <div className="nav__button-circle">
+          {/* ADD DIFFRENT ICON , FOR NAV BUTTON */}
           {isNavOpen ? (
             <Icon icon="ooui:close" color="#ff11c7" />
           ) : (
@@ -36,83 +40,89 @@ export default function Navbar() {
       </motion.button>
 
       <ul className={!isNavOpen ? "nav__list" : "nav__open nav__list"}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 3,
-            repeatDelay: 1,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          className="dot__main dot__1"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 3,
-            repeatDelay: 3,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          className="dot__main dot__2"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 3,
-            repeatDelay: 2,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          className="dot__main dot__3"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 3,
-            repeatDelay: 1.5,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          className="dot__main dot__4"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 3,
-            repeatDelay: 2.5,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          className="dot__main dot__5"
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 3,
-            repeatDelay: 2,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          className="dot__main dot__6 "
-        ></motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 3,
-            delay: 1,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-          className="dot__main dot__7 "
-        ></motion.div>
+        {/* DISPLAY ANIMATION CONDITIONALLY DEPENDING ON SCREEN SIZE  and IF NAVIGATION IS OPEN*/}
+        {isNavOpen && displayAnimation && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 3,
+                repeatDelay: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              className="dot__main dot__1"
+            ></motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 3,
+                repeatDelay: 3,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              className="dot__main dot__2"
+            ></motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 3,
+                repeatDelay: 2,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              className="dot__main dot__3"
+            ></motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 3,
+                repeatDelay: 1.5,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              className="dot__main dot__4"
+            ></motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 3,
+                repeatDelay: 2.5,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              className="dot__main dot__5"
+            ></motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 3,
+                repeatDelay: 2,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              className="dot__main dot__6 "
+            ></motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 3,
+                delay: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              className="dot__main dot__7 "
+            ></motion.div>
+          </>
+        )}
+
         <div className="link__container">
           <motion.li whileHover={"hover"} className="nav__li">
             <motion.div
