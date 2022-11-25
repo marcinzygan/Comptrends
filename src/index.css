@@ -17,6 +17,8 @@
   --clr-accentSeconf: #58effb;
 
   --fs-h1: 2rem;
+  --fs-h2: 1.3rem;
+  --hs-h3: 1rem;
   --fs-txt: 0.8rem;
   --fs-nav: 0.8rem;
 }
@@ -362,7 +364,7 @@ body {
   font-family: var(--ff-headings);
   font-size: var(--fs-h1);
 }
-.hero__span {
+.span__accentFirst {
   color: var(--clr-accentSeconf);
 }
 .hero__subtxt {
@@ -403,6 +405,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 3rem;
 }
 .section__animation {
   display: flex;
@@ -428,7 +431,24 @@ body {
 }
 .section__heading-txt {
   padding-left: 1rem;
+  font-size: var(--fs-h2);
   font-family: var(--ff-headings);
+}
+/* ABOUT SECTION  */
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.heading__h3 {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-h3);
+}
+.about__txt {
+  font-family: var(--ff-text);
+  font-size: var(--fs-txt);
+  margin-top: 1rem;
 }
 /* CONSTRUCTION*/
 .construction {

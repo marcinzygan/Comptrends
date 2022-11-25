@@ -14,7 +14,7 @@ const Home = () => {
             transition={{ duration: 2 }}
           >
             <h1 className="hero__txt">
-              <span className="hero__span">Data</span> solution for your
+              <span className="span__accentFirst">Data</span> solution for your
               business .
             </h1>
             <motion.p
