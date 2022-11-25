@@ -11,7 +11,7 @@ const SectionHeadingAnimation = (props) => {
           transition={{
             ease: "easeInOut",
             duration: 0.5,
-            repeatDelay: 5,
+            repeatDelay: 10,
             repeat: Infinity,
             repeatType: "reverse",
           }}
@@ -22,7 +22,7 @@ const SectionHeadingAnimation = (props) => {
           transition={{
             ease: "easeInOut",
             duration: 0.5,
-            repeatDelay: 5,
+            repeatDelay: 10,
             repeat: Infinity,
             repeatType: "reverse",
           }}
@@ -34,7 +34,7 @@ const SectionHeadingAnimation = (props) => {
           transition={{
             ease: "easeInOut",
             duration: 0.5,
-            repeatDelay: 5,
+            repeatDelay: 10,
             repeat: Infinity,
             repeatType: "reverse",
           }}
@@ -47,7 +47,7 @@ const SectionHeadingAnimation = (props) => {
           transition={{
             ease: "easeInOut",
             duration: 0.5,
-            repeatDelay: 5,
+            repeatDelay: 10,
             repeat: Infinity,
             repeatType: "reverse",
           }}
@@ -59,7 +59,7 @@ const SectionHeadingAnimation = (props) => {
           transition={{
             ease: "easeInOut",
             duration: 0.5,
-            repeatDelay: 5,
+            repeatDelay: 10,
             repeat: Infinity,
             repeatType: "reverse",
           }}
