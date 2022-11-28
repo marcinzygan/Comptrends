@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  displayConstruction: false,
+  displayConstruction: true,
 };
 
 const constructionSlice = createSlice({
