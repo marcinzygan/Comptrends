@@ -9,16 +9,16 @@ const About = () => {
       <div className="about__container">
         <div className="about__txt-container">
           <h3 className="heading__h3">
-            <span className="span__accentFirst">Data</span> engineering and web
+            <span className="span__accentSecond">Data</span> engineering and web
             development company
           </h3>
-          <p className="about__txt">
+          <p className="paragraph__txt">
             Lorem ipsum dolor sit amet consectetur. Vitae odio quis sit velit
             dui. Elit risus morbi etiam diam tempus. Vitae amet metus ante
             gravida nisi eget imperdiet. Consectetur ut lorem mattis felis
             sapien diam arcu
           </p>
-          <p className="about__txt">
+          <p className="paragraph__txt">
             Lorem ipsum dolor sit amet consectetur. Vitae odio quis sit velit
             dui. Elit risus morbi etiam diam tempus.{" "}
           </p>

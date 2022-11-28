@@ -14,7 +14,7 @@
   --clr-white: #ffffff;
   --clr-dark: #1d1d1b;
   --clr-accentFirst: #ff11c7;
-  --clr-accentSeconf: #58effb;
+  --clr-accentSecond: #58effb;
 
   --fs-h1: 2rem;
   --fs-h2: 1.3rem;
@@ -54,11 +54,28 @@ section {
   min-height: 90vh;
   color: var(--clr-white);
   background-color: var(--clr-dark);
-  margin: 2rem;
+  padding: 2rem;
   z-index: 2;
 }
 body {
   background-color: var(--clr-dark);
+}
+.paragraph__txt {
+  font-family: var(--ff-text);
+  font-size: var(--fs-txt);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.span__accentFirst {
+  color: var(--clr-accentFirst);
+}
+.span__accentSecond {
+  color: var(--clr-accentSecond);
+}
+.heading__h3 {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-h3);
+  padding-bottom: 1.5rem;
 }
 .iconify {
   cursor: pointer;
@@ -101,7 +118,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--clr-accentSeconf);
+  background-color: var(--clr-accentSecond);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -364,9 +381,7 @@ body {
   font-family: var(--ff-headings);
   font-size: var(--fs-h1);
 }
-.span__accentFirst {
-  color: var(--clr-accentSeconf);
-}
+
 .hero__subtxt {
   display: none;
   margin-top: 1rem;
@@ -424,7 +439,7 @@ body {
   background-color: var(--clr-white);
 }
 .section__line-4 {
-  background-color: var(--clr-accentSeconf);
+  background-color: var(--clr-accentSecond);
 }
 .section__line-5 {
   background-color: var(--clr-white);
@@ -441,14 +456,33 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
-.heading__h3 {
-  font-family: var(--ff-headings);
-  font-size: var(--fs-h3);
+
+/* OFFER SECTION */
+.offer__animation-container {
+  position: relative;
+  height: 300px;
 }
-.about__txt {
-  font-family: var(--ff-text);
-  font-size: var(--fs-txt);
-  margin-top: 1rem;
+.circle__animation {
+  /* height: 300px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.circle__one {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle__two {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* CONSTRUCTION*/
 .construction {
