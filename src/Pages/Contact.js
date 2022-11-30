@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-scroll";
+import Form from "../Components/Form";
 import aboutImg from "../Images/about.png";
 import SectionHeadingAnimation from "../Components/SectionHeadingAnimation";
 const Contact = () => {
@@ -42,6 +43,7 @@ const Contact = () => {
           <p className="contact__details-txt">Email : comptrends@gmail.com</p>
         </div>
       </div>
+      <Form />
     </section>
   );
 };
