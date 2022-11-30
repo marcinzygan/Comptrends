@@ -11,6 +11,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Offer from "./Pages/Offer";
+import Footer from "./Components/Footer";
 // Reducers
 import { checkScreenSize } from "./Features/hideAnimationSlice";
 
@@ -24,7 +25,7 @@ const MainPage = () => {
   // Run use effect on app load to check the screen size
   useEffect(() => {
     dispatch(checkScreenSize());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
@@ -37,6 +38,7 @@ const MainPage = () => {
       {!displayConstruction && <Contact />}
       {displayConstruction && <Construction />}
       {displayConstruction && <FooterCOnstruction />}
+      {!displayConstruction && <Footer />}
     </>
   );
 };
