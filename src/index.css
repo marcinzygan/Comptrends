@@ -487,8 +487,38 @@ body {
   transform: translate(-50%, -50%);
 }
 /* CONTACT */
-.contact__btn {
+.contact__btn-one {
   border-color: #58effb;
+  margin: 0;
+}
+.contact__btn-two {
+  margin: 0;
+}
+.contact__buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.contact__or {
+  font-family: var(--ff-headings);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+}
+.contact__img {
+  margin: 3rem 0 3rem 0;
+}
+.contact__details-txt {
+  font-family: var(--ff-text);
+  font-size: var(--fs-txt);
+  font-weight: var(--fw-regular);
+  padding: 0.25rem 0 0.25rem 0;
+}
+.social__icons-contact {
+  margin: 1rem 0 1rem 0;
 }
 /* CONSTRUCTION*/
 .construction {

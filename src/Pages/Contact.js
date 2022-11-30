@@ -1,5 +1,7 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 import { Link } from "react-scroll";
+import aboutImg from "../Images/about.png";
 import SectionHeadingAnimation from "../Components/SectionHeadingAnimation";
 const Contact = () => {
   return (
@@ -11,17 +13,33 @@ const Contact = () => {
           with us ?
         </h1>
         <div className="contact__buttons-container">
-          <div className="hero__btn contact__btn">
+          <div className="hero__btn contact__btn-one">
             <Link to="form" spy={true} smooth={true}>
               Contact us
             </Link>
           </div>
           <p className="contact__or">or</p>
-          <div className="hero__btn">
+          <div className="hero__btn contact__btn-two">
             <Link to="offer" spy={true} smooth={true}>
               Learn more
             </Link>
           </div>
+        </div>
+      </div>
+      <div className="contact__container">
+        <div className="contact__details">
+          <img
+            className="contact__img"
+            src={aboutImg}
+            alt="phone email details"
+          ></img>
+          <div className="social__icons social__icons-contact ">
+            <Icon icon="entypo-social:facebook-with-circle" />
+            <Icon icon="entypo-social:linkedin-with-circle" />
+            <Icon icon="entypo-social:twitter-with-circle" />
+          </div>
+          <p className="contact__details-txt">Phone : +48 001 001 001</p>
+          <p className="contact__details-txt">Email : comptrends@gmail.com</p>
         </div>
       </div>
     </section>
