@@ -18,8 +18,8 @@
 
   --fs-h1: 2rem;
   --fs-h2: 1.3rem;
-  --hs-h3: 1rem;
-  --fs-txt: 0.8rem;
+  --fs-h4: 1rem;
+  --fs-txt: 0.7rem;
   --fs-nav: 0.8rem;
 }
 /* FONT SIZES FOR DIFFERENT SCREENS */
@@ -556,6 +556,28 @@ body {
   background: none;
   color: var(--clr-white);
 }
+/* FOOTER */
+.footer__links-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 2rem 0;
+}
+.footer__h4 {
+  color: var(--clr-white);
+  font-family: var(--ff-text);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h4);
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7rem;
+  cursor: pointer;
+  font-weight: 300;
+  font-family: var(--ff-text);
+  padding-top: 0.25rem;
+}
+
 /* CONSTRUCTION*/
 .construction {
   min-height: 90vh;
@@ -576,14 +598,6 @@ body {
 }
 .footer__text {
   font-weight: 700;
-}
-.footer__link {
-  text-decoration: none;
-  color: white;
-  font-size: 0.7rem;
-  cursor: pointer;
-  font-weight: 300;
-  font-family: var(--ff-text);
 }
 
 /* MEDIA QUERIES */
@@ -615,9 +629,9 @@ body {
     height: 305px;
     transform: translateY(12px);
   }
-  .hero__btn {
+  /* .hero__btn {
     margin-top: 0;
-  }
+  } */
   .hero__line {
     height: 200px;
   }
